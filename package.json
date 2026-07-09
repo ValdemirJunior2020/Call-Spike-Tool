@@ -1,0 +1,22 @@
+{
+  "name": "call-queue-spike-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local React + Node watcher for HotelPlanner support queue spikes with Google Sheets logging.",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm --workspace server run dev\" \"npm --workspace client run dev\"",
+    "start": "concurrently \"npm --workspace server start\" \"npm --workspace client run dev -- --host 0.0.0.0\"",
+    "server": "npm --workspace server run dev",
+    "client": "npm --workspace client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

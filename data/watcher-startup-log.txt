@@ -1,0 +1,33 @@
+======================================== 
+Started at Thu 07/09/2026  7:36:11.07 
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5050
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Users\Valdemir Goncalves\Downloads\call-queue-spike-monitor\call-queue-spike-monitor\node_modules\express\lib\application.js:635:24)
+    at file:///C:/Users/Valdemir%20Goncalves/Downloads/call-queue-spike-monitor/call-queue-spike-monitor/server/src/index.js:60:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5050
+}
+
+Node.js v20.20.1
+======================================== 
+Started at Thu 07/09/2026  7:38:32.24 
+======================================== 
+Started at Thu 07/09/2026  7:47:26.93 
+Starting server/watcher... 
+Starting React dashboard... 
+Opening dashboard... 
